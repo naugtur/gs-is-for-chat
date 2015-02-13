@@ -1,0 +1,32 @@
+{
+  "name": "gs-is-for-chat",
+  "version": "1.0.0",
+  "description": "Chats on grooveshark.com are cool",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naugtur/gs-is-for-chat.git"
+  },
+  "keywords": [
+    "grooveshark",
+    "chat",
+    "bookmarklet"
+  ],
+  "author": "naugtur",
+  "license": "public domain",
+  "bugs": {
+    "url": "https://github.com/naugtur/gs-is-for-chat/issues"
+  },
+  "homepage": "https://github.com/naugtur/gs-is-for-chat",
+  "browserify-css": {
+    "autoInject": true,
+    "minify": true,
+    "rootDir": "."
+  },
+  "devDependencies": {
+    "uglifyify": "^3.0.1"
+  }
+}
