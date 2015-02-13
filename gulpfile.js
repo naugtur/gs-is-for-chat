@@ -8,7 +8,7 @@ var gutil = require('gulp-util');
 
 gulp.task('html', function () {
     bundle(function (bundleStr) {
-        gulp.src('./template.html')
+        gulp.src('./tpl/index.html')
             .pipe(preprocess({
                 context: {
                     script: encodeURIComponent(bundleStr)
@@ -32,6 +32,7 @@ function bundle(cb) {
     b.bundle()
         .on('error', gutil.log.bind(gutil, 'Browserify Error'))
         .pipe(concat(function (data) {
+        console.log(data.toString('utf8'));
             cb(data.toString('utf8'));
         }));
 }
