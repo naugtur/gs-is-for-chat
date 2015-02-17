@@ -32,7 +32,7 @@ function bundle(cb) {
     b.bundle()
         .on('error', gutil.log.bind(gutil, 'Browserify Error'))
         .pipe(concat(function (data) {
-        console.log(data.toString('utf8'));
+            console.log('javascript:' + data.toString('utf8'));
             cb(data.toString('utf8'));
         }));
 }
