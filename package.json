@@ -16,6 +16,10 @@
     "bookmarklet"
   ],
   "author": "naugtur",
+  "contributors": [{
+    "name": "Tiago Fernandez",
+    "web": "http://github.com/tiagofernandez"
+  }],
   "license": "public domain",
   "bugs": {
     "url": "https://github.com/naugtur/gs-is-for-chat/issues"
