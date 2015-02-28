@@ -1,10 +1,8 @@
 var gulp = require('gulp');
 var preprocess = require('gulp-preprocess');
 var browserify = require('browserify');
-var concat = require('concat-stream')
+var concat = require('concat-stream');
 var gutil = require('gulp-util');
-
-
 
 gulp.task('html', function () {
     bundle(function (bundleStr) {
@@ -14,7 +12,7 @@ gulp.task('html', function () {
                     script: encodeURIComponent(bundleStr)
                 }
             }))
-            .pipe(gulp.dest('./'))
+            .pipe(gulp.dest('./'));
     });
 });
 
@@ -32,7 +30,7 @@ function bundle(cb) {
     b.bundle()
         .on('error', gutil.log.bind(gutil, 'Browserify Error'))
         .pipe(concat(function (data) {
-        console.log(data.toString('utf8'));
+            console.log(data.toString('utf8'));
             cb(data.toString('utf8'));
         }));
 }

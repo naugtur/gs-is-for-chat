@@ -1,28 +1,46 @@
 .naugtur .bc-chat-container {
     position: fixed !important;
     z-index: 11511 !important;
-    top: 45px !important;
-    left: 25%;
+    top: 50px !important;
+    right: 200px;
     background: #fff;
-    width: 50% !important;
-    height: calc(96% - 120px) !important;
+    width: 30% !important;
+    height: calc(100% - 110px) !important;
 }
+@media (max-width: 1240px) {
+    .naugtur .bc-chat-container {
+        right: 40px;
+    }
+}
+
+.naugtur #theme-header {
+    display: none !important;
+}
+
+.naugtur #page-wrapper.theme {
+    background: #2c2c2c;
+}
+
 .naugtur #stage {
     z-index: auto !important;
 }
+
 .naugtur .bc-chat-messages-container {
     top: 0 !important;
 }
+
 .naugtur #bc-chat-input-container,
 .naugtur .bc-chat-input,
 .naugtur .chat-activity.chat-message .inner {
-    width: calc(96% - 80px) !important;
+    width: calc(100% - 80px) !important;
 }
+
 .naugtur #bc-chat-join-btn,
 .naugtur .bc-chat-overlay,
 .naugtur #bc-share {
     display: none !important;
 }
+
 .naugtur .bc-chat-actions.hide,
 .naugtur #bc-chat-input-container.hide,
 .naugtur .chat-settings.hide {
