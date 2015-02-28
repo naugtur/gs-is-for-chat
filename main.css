@@ -1,16 +1,21 @@
 .naugtur .bc-chat-container {
     position: fixed !important;
     z-index: 11511 !important;
-    top: 50px !important;
+    top: 35px !important;
     right: 200px;
     background: #fff;
-    width: 30% !important;
-    height: calc(100% - 110px) !important;
+    width: calc(50% - 200px) !important;
+    height: calc(100% - 155px) !important;
 }
 @media (max-width: 1240px) {
     .naugtur .bc-chat-container {
         right: 40px;
+        width: calc(50% - 60px) !important;
     }
+}
+
+.naugtur #bc-col1, .naugtur #bc-col1 > div {
+    max-width: 500px !important;
 }
 
 .naugtur #theme-header {
@@ -45,4 +50,8 @@
 .naugtur #bc-chat-input-container.hide,
 .naugtur .chat-settings.hide {
     display: inline-block !important;
+}
+
+#naugtur-chat-button {
+    z-index: 50000;
 }
